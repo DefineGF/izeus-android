@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/member_recycler"
+        android:layout_marginTop="20dp"
+        android:layout_above="@id/fragment_member_btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+    <Button android:id="@+id/fragment_member_btn_confirm"
+        style="@style/LoginBtnStyle"
+        android:background="@drawable/login_btn_bg"
+        android:text="提交"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"/>
+</RelativeLayout>

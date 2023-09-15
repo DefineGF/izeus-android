@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/topPanel"
+        style="@style/FragmentTopPanelStyle">
+        <TextView
+            android:id="@+id/company_name"
+            android:text="单位名称"
+            style="@style/FragmentTextViewStyle"/>
+
+        <TextView
+            android:id="@+id/company_quality"
+            android:layout_below="@id/company_name"
+            android:text="单位性质"
+            style="@style/FragmentTextViewStyle"/>
+
+        <TextView
+            android:id="@+id/represent"
+            android:text="法人代表"
+            style="@style/FragmentTextViewStyle"
+            android:layout_below="@id/company_quality"/>
+        <TextView
+            android:id="@+id/contact"
+            android:text="联系方式"
+            style="@style/FragmentTextViewStyle"
+            android:layout_below="@id/represent"/>
+
+        <TextView
+            android:id="@+id/address"
+            android:text="联系地址"
+            style="@style/FragmentTextViewStyle"
+            android:layout_below="@id/contact"/>
+
+
+        <EditText
+            android:id="@+id/et_company_name"
+            android:layout_toEndOf="@id/company_name"
+            android:layout_alignBaseline="@id/company_name"
+            style="@style/FragmentEditTextStyle"
+            tools:ignore="Autofill,LabelFor,RtlHardcoded,TextFields" />
+
+
+        <EditText
+            android:id="@+id/et_company_quality"
+            android:layout_toEndOf="@id/company_name"
+            style="@style/FragmentEditTextStyle"
+            android:layout_below="@id/et_company_name"
+            android:layout_alignBaseline="@id/company_quality"
+            tools:ignore="Autofill,LabelFor,TextFields" />
+
+        <EditText
+            android:id="@+id/et_represent"
+            android:layout_toEndOf="@id/represent"
+            style="@style/FragmentEditTextStyle"
+            android:layout_alignBaseline="@id/represent"/>
+        <EditText
+            android:id="@+id/et_contact"
+            android:layout_toEndOf="@id/contact"
+            android:layout_alignBaseline="@id/contact"
+            style="@style/FragmentEditTextStyle" />
+        <EditText
+            android:id="@+id/et_address"
+            android:layout_toEndOf="@id/address"
+            android:layout_alignBaseline="@id/address"
+            style="@style/FragmentEditTextStyle" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/fragment_company_btn_confirm"
+        style="@style/LoginBtnStyle"
+        android:background="@drawable/login_btn_bg"
+        android:text="提交"
+        android:layout_below="@id/topPanel"
+        android:layout_marginTop="45dp"/>
+</RelativeLayout>

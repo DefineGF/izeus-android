@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fragment_content_border">
+    <TextView
+        android:id="@+id/dialog_start_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="转账时间"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/holo_blue_bright"/>
+    <TextView
+        android:layout_below="@id/dialog_start_time"
+        style="@style/AccountMsgItemBelowTextLeft"
+        android:text="流水号"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:layout_below="@id/dialog_start_time"
+        android:id="@+id/dialog_id"
+        style="@style/AccountMsgItemBelowTextRight"
+        android:text="null id"/>
+
+    <TextView
+        android:layout_below="@id/dialog_id"
+        style="@style/AccountMsgItemBelowTextLeft"
+        android:text="发起人"
+        android:textColor="@android:color/black"/>
+    <TextView
+        android:id="@+id/dialog_from_name"
+        style="@style/AccountMsgItemBelowTextRight"
+        android:layout_below="@id/dialog_id"
+        android:text="null name"/>
+
+    <TextView
+        android:text="转账金额"
+        android:layout_below="@id/dialog_from_name"
+        style="@style/AccountMsgItemBelowTextLeft"
+        android:textColor="@android:color/black"/>
+    <TextView
+        android:id="@+id/dialog_money"
+        style="@style/AccountMsgItemBelowTextRight"
+        android:layout_below="@id/dialog_from_name"
+        android:text="0 money"/>
+
+    <TextView
+        style="@style/AccountMsgItemBelowTextLeft"
+        android:text="转账状态"
+        android:layout_below="@id/dialog_money"
+        android:textColor="@android:color/black"/>
+    <TextView
+        android:id="@+id/dialog_state"
+        android:layout_below="@id/dialog_money"
+        style="@style/AccountMsgItemBelowTextRight"
+        android:text="未完成"/>
+
+    <TextView
+        style="@style/AccountMsgItemBelowTextLeft"
+        android:text="付款账号"
+        android:layout_below="@id/dialog_state"
+        android:textColor="@android:color/black"/>
+    <TextView
+        android:id="@+id/dialog_from_acc"
+        style="@style/AccountMsgItemBelowTextRight"
+        android:layout_below="@id/dialog_state"
+        android:text="null 付款账户"/>
+
+    <TextView
+        style="@style/AccountMsgItemBelowTextLeft"
+        android:layout_below="@id/dialog_from_acc"
+        android:textColor="@android:color/black"
+        android:text="收款账户"/>
+
+    <TextView
+        android:id="@+id/dialog_to_acc"
+        android:text="null 收款账户"
+        android:layout_below="@id/dialog_from_acc"
+        style="@style/AccountMsgItemBelowTextRight"/>
+
+    <TextView
+        android:text="已验证人数"
+        android:layout_below="@id/dialog_to_acc"
+        android:textColor="@android:color/black"
+        style="@style/AccountMsgItemBelowTextLeft"/>
+    <TextView
+        android:id="@+id/dialog_pass"
+        android:layout_below="@id/dialog_to_acc"
+        android:text="null pass"
+        style="@style/AccountMsgItemBelowTextRight"/>
+    <TextView
+        android:text="未验证人数"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/dialog_pass"
+        style="@style/AccountMsgItemBelowTextLeft"/>
+    <TextView
+        android:id="@+id/dialog_un_pass"
+        android:text="null un_pass"
+        android:layout_below="@id/dialog_pass"
+        style="@style/AccountMsgItemBelowTextRight"/>
+    <TextView
+        android:id="@+id/temp_add_msg"
+        android:text="备注"
+        android:layout_below="@id/dialog_un_pass"
+        android:textColor="@android:color/black"
+        style="@style/AccountMsgItemBelowTextLeft"/>
+    <TextView
+        android:id="@+id/dialog_add_msg"
+        android:layout_below="@id/dialog_un_pass"
+        android:text="null 备注"
+        style="@style/AccountMsgItemBelowTextRight"/>
+</RelativeLayout>

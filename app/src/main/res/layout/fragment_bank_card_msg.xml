@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.BankCardMsgFragment">
+
+    <LinearLayout
+        android:id="@+id/acc_msg_frag_container"
+        android:orientation="vertical"
+        android:layout_above="@id/lin_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lin_bottom"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        tools:ignore="UselessLeaf">
+        <Button
+            android:id="@+id/acc_msg_btn_current"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="活期账户"
+            android:background="@drawable/account_msg_btn_unselected"/>
+        <Button
+            android:id="@+id/acc_msg_btn_regular"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="定期账户"
+            android:background="@drawable/account_msg_btn_unselected"/>
+    </LinearLayout>
+
+</RelativeLayout>

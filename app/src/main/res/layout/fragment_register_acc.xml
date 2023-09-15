@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/topPanel"
+        style="@style/FragmentTopPanelStyle">
+        <TextView
+            android:id="@+id/count"
+            android:text="成员人数"
+            style="@style/FragmentTextViewStyle"/>
+        <TextView
+            android:id="@+id/min_count"
+            android:text="最少人数"
+            style="@style/FragmentTextViewStyle"
+            android:layout_below="@id/count"/>
+        <TextView
+            android:id="@+id/min_money"
+            android:text="最少金额"
+            android:layout_below="@id/min_count"
+            style="@style/FragmentTextViewStyle"/>
+
+        <EditText
+            android:id="@+id/account_et_count"
+            android:layout_toEndOf="@id/count"
+            android:layout_alignBaseline="@id/count"
+            style="@style/FragmentEditTextStyle"/>
+        <EditText
+            android:id="@+id/account_et_min_count"
+            android:layout_toEndOf="@id/min_count"
+            android:layout_alignBaseline="@id/min_count"
+            android:layout_below="@id/account_et_count"
+            style="@style/FragmentEditTextStyle"/>
+        <EditText
+            android:id="@+id/account_min_money"
+            android:layout_toEndOf="@id/min_count"
+            android:layout_below="@id/account_et_min_count"
+            style="@style/FragmentEditTextStyle"/>
+    </RelativeLayout>
+    <Button
+        android:id="@+id/fragment_account_btn"
+        style="@style/LoginBtnStyle"
+        android:background="@drawable/login_btn_bg"
+        android:text="提交"
+        android:layout_below="@id/topPanel"
+        android:layout_marginTop="45dp" />
+
+    
+
+</RelativeLayout>

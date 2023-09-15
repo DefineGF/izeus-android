@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="单位基本信息:"
+        android:textSize="22sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorBankMsgTitleColor"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fragment_content_border"
+        android:layout_margin="5dp">
+        <TextView
+            android:id="@+id/company_tv_name_left"
+            android:text="单位名称:"
+            style="@style/AccountMsgItemFirstTextLeft"/>
+        <TextView
+            android:id="@+id/company_tv_name"
+            android:text="*****"
+            style="@style/AccountMsgItemFirstTextRight"/>
+        <TextView
+            android:id="@+id/company_tv_type_left"
+            android:text="单位性质:"
+            android:layout_below="@id/company_tv_name_left"
+            style="@style/AccountMsgItemBelowTextLeft"/>
+
+        <TextView
+            android:id="@+id/company_tv_type"
+            android:text="null 性质"
+            android:layout_below="@id/company_tv_name"
+            style="@style/AccountMsgItemBelowTextRight"/>
+        <TextView
+            android:id="@+id/company_tv_rep_left"
+            android:layout_below="@id/company_tv_type_left"
+            style="@style/AccountMsgItemBelowTextLeft"
+            android:text="法人代表:"/>
+        <TextView
+            android:id="@+id/company_tv_rep"
+            android:layout_below="@id/company_tv_type"
+            android:text="null 代表"
+            style="@style/AccountMsgItemBelowTextRight"/>
+
+        <TextView
+            android:id="@+id/company_tv_contact_left"
+            android:layout_below="@id/company_tv_rep_left"
+            android:text="联系方式:"
+            style="@style/AccountMsgItemBelowTextLeft"/>
+        <TextView
+            android:id="@+id/company_tv_contact"
+            android:layout_below="@id/company_tv_rep"
+            android:text="null 联系"
+            style="@style/AccountMsgItemBelowTextRight"/>
+
+
+        <TextView
+            android:id="@+id/company_tv_address_left"
+            android:layout_below="@id/company_tv_contact_left"
+            android:text="联系地址:"
+            style="@style/AccountMsgItemBelowTextLeft"/>
+        <TextView
+            android:id="@+id/company_tv_address"
+            android:layout_below="@id/company_tv_contact"
+            android:text="null 地址"
+            style="@style/AccountMsgItemBelowTextRight"/>
+
+    </RelativeLayout>
+    <TextView
+        android:text="门限账户信息:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorBankMsgTitleColor"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fragment_content_border"
+        android:layout_margin="5dp">
+        <TextView
+            android:id="@+id/acc_tv_name_left"
+            android:text="门限账号:"
+            style="@style/AccountMsgItemFirstTextLeft"/>
+        <TextView
+            android:id="@+id/acc_tv_name"
+            android:text="*****"
+            style="@style/AccountMsgItemFirstTextRight"/>
+        <TextView
+            android:id="@+id/acc_tv_balance_left"
+            android:text="账户余额:"
+            android:layout_below="@id/acc_tv_name_left"
+            style="@style/AccountMsgItemBelowTextLeft"/>
+
+        <TextView
+            android:id="@+id/acc_tv_balance"
+            android:text="null data"
+            android:layout_below="@id/acc_tv_name"
+            style="@style/AccountMsgItemBelowTextRight"/>
+
+        <TextView
+            android:id="@+id/acc_tv_tn_left"
+            android:layout_below="@id/acc_tv_balance_left"
+            style="@style/AccountMsgItemBelowTextLeft"
+            android:text="总成员数:"/>
+        <TextView
+            android:id="@+id/acc_tv_tn"
+            android:layout_below="@id/acc_tv_balance"
+            android:text="null data"
+            style="@style/AccountMsgItemBelowTextRight"/>
+
+        <TextView
+            android:id="@+id/acc_tv_tt_left"
+            android:layout_below="@id/acc_tv_tn_left"
+            android:text="最少支付人数:"
+            style="@style/AccountMsgItemBelowTextLeft"/>
+        <TextView
+            android:id="@+id/acc_tv_tt"
+            android:layout_below="@id/acc_tv_tn"
+            android:text="null data"
+            style="@style/AccountMsgItemBelowTextRight"/>
+
+
+        <TextView
+            android:id="@+id/acc_tv_amount_left"
+            android:layout_below="@id/acc_tv_tt_left"
+            android:text="最少支付金额:"
+            style="@style/AccountMsgItemBelowTextLeft"/>
+        <TextView
+            android:id="@+id/acc_tv_amount"
+            android:layout_below="@id/acc_tv_tt"
+            android:text="null data"
+            style="@style/AccountMsgItemBelowTextRight"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

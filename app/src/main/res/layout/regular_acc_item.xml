@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fragment_content_border"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/reg_item_tv_acc_left"
+            android:text="卡号/账户"
+            style="@style/AccountMsgItemFirstTextLeft"/>
+        <TextView
+            android:id="@+id/reg_item_tv_acc"
+            android:text="*****"
+            style="@style/AccountMsgItemFirstTextRight"/>
+
+        <TextView
+            android:id="@+id/reg_item_tv_type_left"
+            android:text="类型(册号/存单号)"
+            android:layout_below="@id/reg_item_tv_acc_left"
+            style="@style/AccountMsgItemBelowTextLeft"/>
+
+        <TextView
+            android:id="@+id/reg_item_tv_type"
+            android:text="null 类型"
+            android:layout_below="@id/reg_item_tv_acc"
+            style="@style/AccountMsgItemBelowTextRight"/>
+        <TextView
+            android:id="@+id/reg_item_tv_name_left"
+            android:layout_below="@id/reg_item_tv_type_left"
+            style="@style/AccountMsgItemBelowTextLeft"
+            android:text="别名"/>
+        <TextView
+            android:id="@+id/reg_item_tv_name"
+            android:layout_below="@id/reg_item_tv_type"
+            android:text="null 别名"
+            style="@style/AccountMsgItemBelowTextRight"/>
+
+
+
+        <TextView
+            android:id="@+id/reg_item_tv_money_type_left"
+            android:layout_below="@id/reg_item_tv_name"
+            android:text="币种"
+            style="@style/AccountMsgItemBelowTextLeft"/>
+        <TextView
+            android:id="@+id/reg_item_tv_money_type"
+            android:layout_below="@id/reg_item_tv_name"
+            android:text="null 币种"
+            style="@style/AccountMsgItemBelowTextRight"/>
+        <TextView
+            android:id="@+id/reg_item_tv_rate_left"
+            android:text="钞汇"
+            android:layout_below="@id/reg_item_tv_money_type_left"
+            style="@style/AccountMsgItemBelowTextLeft"/>
+        <TextView
+            android:id="@+id/reg_item_tv_rate"
+            android:layout_below="@id/reg_item_tv_money_type"
+            android:text="null 钞汇"
+            style="@style/AccountMsgItemBelowTextRight"/>
+    </RelativeLayout>
+
+</LinearLayout>

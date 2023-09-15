@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:id="@+id/topPanel"
+        style="@style/FragmentTopPanelStyle"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/to_acc"
+            android:text="收款账户"
+            style="@style/FragmentTextViewStyle" />
+        <TextView
+            android:id="@+id/amount"
+            android:text="转账金额"
+            style="@style/FragmentTextViewStyle"
+            android:layout_below="@id/to_acc"/>
+
+
+
+        <EditText
+            android:id="@+id/lunch_tf_et_to_acc"
+            android:layout_toEndOf="@id/to_acc"
+            style="@style/FragmentEditTextStyle"
+            android:layout_alignBaseline="@id/to_acc"/>
+        <EditText
+            android:id="@+id/lunch_tf_amount"
+            android:layout_toEndOf="@id/amount"
+            android:layout_alignBaseline="@id/amount"
+            style="@style/FragmentEditTextStyle" />
+        <EditText
+            android:id="@+id/lunch_tf_add_msg"
+            android:background="@drawable/dialog_lunch_tf_et_border"
+            android:layout_below="@id/amount"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="30dp"
+            android:gravity="top"
+            android:hint="添加备注信息"
+            android:maxLines="5"/>
+
+        <Button style="@style/LoginBtnStyle"
+            android:id="@+id/lunch_rt_btn_confirm"
+            android:layout_below="@id/lunch_tf_add_msg"
+            android:background="@drawable/login_btn_bg"
+            android:layout_marginTop="26dp"
+            android:layout_marginBottom="20dp"
+            android:text="发起转账"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

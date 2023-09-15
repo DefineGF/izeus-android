@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorTitleText">#EDF5ED</color>
+    <color name="colorTitleBackground">#2C3131</color>
+    <color name="colorLoginBtnPressed">#FFFF8D</color>
+    <color name="colorLoginBtnUnpressed">#FFD180</color>
+
+    <color name="colorRegisterTitle">#00EAFF</color>
+
+    <color name="colorAccMsgBtnSelect">#FFAB40</color>
+    <color name="colorAccMsgBtnUnSelect">#FFE57F</color>
+
+    <color name="colorBankMsgTitleColor">#9C6604</color>
+
+
+    <color name="colorTransferStateFinish">#088608</color>
+    <color name="colorTransferStateUnFinish">#B37505</color>
+    <color name="colorTransferStateFailure">#ff0000</color>
+</resources>

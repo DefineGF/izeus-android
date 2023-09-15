@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fragment_content_border"
+        android:layout_marginBottom="20dp"
+        android:layout_margin="5dp">
+        <TextView
+            style="@style/AccountMsgItemBelowTextLeft"
+            android:text="流水号"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/transfer_item_id"
+            style="@style/AccountMsgItemBelowTextRight"
+            android:text="null id"/>
+
+        <TextView
+            android:layout_below="@id/transfer_item_id"
+            style="@style/AccountMsgItemBelowTextLeft"
+            android:text="发起人"
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:id="@+id/transfer_item_from_name"
+            style="@style/AccountMsgItemBelowTextRight"
+            android:layout_below="@id/transfer_item_id"
+            android:text="null name"/>
+
+        <TextView
+            android:text="转账金额"
+            android:layout_below="@id/transfer_item_from_name"
+            style="@style/AccountMsgItemBelowTextLeft"
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:id="@+id/transfer_item_money"
+            style="@style/AccountMsgItemBelowTextRight"
+            android:layout_below="@id/transfer_item_from_name"
+            android:text="0 money"/>
+
+        <TextView
+            style="@style/AccountMsgItemBelowTextLeft"
+            android:text="转账状态"
+            android:layout_below="@id/transfer_item_money"
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:id="@+id/transfer_item_state"
+            android:layout_below="@id/transfer_item_money"
+            style="@style/AccountMsgItemBelowTextRight"
+            android:text="未完成"/>
+        <TextView
+            android:id="@+id/transfer_item_time"
+            android:layout_below="@id/transfer_item_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2019-07-28 13:00"
+            android:gravity="center"
+            android:textColor="@color/colorAccMsgBtnSelect"
+            android:textSize="22sp"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

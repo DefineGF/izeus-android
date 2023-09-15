@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.MainActivity">
+
+    <TextView
+        android:id="@+id/main_title"
+        android:text="@string/string_title"
+        style="@style/MyTitleStyle"/>
+
+    <EditText
+        android:id="@+id/login_et_name"
+        style="@style/LoginEditTextStyle"
+        android:layout_marginTop="90dp"
+        android:hint="登录名"
+        tools:ignore="Autofill,HardcodedText,TextFields" />
+    <EditText
+        android:id="@+id/login_et_password"
+        style="@style/LoginEditTextStyle"
+        android:layout_marginTop="20dp"
+        android:hint="密码"
+        tools:ignore="Autofill,HardcodedText,TextFields"
+        android:password="true"/>
+
+    <Button
+        android:id="@+id/login_btn_login"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/login_btn_bg"
+        android:text="登录"
+        style="@style/LoginBtnStyle"/>
+
+    <Button
+        android:id="@+id/login_btn_register"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_btn_bg"
+        android:text="注册"
+        style="@style/LoginBtnStyle"/>
+
+
+</LinearLayout>
